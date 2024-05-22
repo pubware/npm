@@ -2,8 +2,6 @@
 
 The `npm` plugin is responsible for bumping the package version and publishing to a registry.
 
-Used internally with [packpub](https://github.com/packpub/packpub).
-
 ## Props
 
 | Prop         | Type    | Description                               |
