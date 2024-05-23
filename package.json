@@ -1,0 +1,46 @@
+{
+  "name": "@pubware/npm",
+  "version": "0.0.0",
+  "description": "npm plugin",
+  "author": "William Grosset (https://williamgrosset.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pubware/npm"
+  },
+  "keywords": [
+    "package",
+    "publisher",
+    "release",
+    "cli",
+    "npm",
+    "plugin"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.25",
+    "@types/semver": "^7.5.8",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@pubware/plugin": "1.0.0-alpha.2",
+    "semver": "^7.6.2"
+  }
+}
